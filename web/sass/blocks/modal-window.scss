@@ -1,0 +1,49 @@
+.modal-window {
+	display: none;
+	position: fixed;
+    top: 36%;
+    left: 25%;
+    z-index: 20;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #e6e6e6;
+    &.submit-success {
+    	display: block;
+    }
+    &__message-wrapper {
+    	padding: 10px;
+    	padding-top: 55px;
+    	border-radius: 10px;
+    	background-color: #ffffff;
+    }
+    &__close-btn {
+    	position: absolute;
+    	top: 15px;
+    	right: 15px;
+    	width: 47px;
+    	height: 47px;
+    	border-radius: 50%;
+    	cursor: pointer;
+    	transition: all 0.3s;
+    	&:hover {
+    		transform: rotate(270deg);
+    	}
+    	&:active {
+    		background-color: rgba(0, 0, 0, 0.4);
+    	}
+    }
+    &__close-icon {
+    	font-size: 42px;
+    	color: #212121;
+    }
+    &__message {
+    	margin: 0;
+    	margin-bottom: 30px;
+    	padding: 0 10px;
+    	text-align: center;
+    	font-size: 32px;
+    	line-height: 40px;
+    }
+}

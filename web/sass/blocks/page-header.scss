@@ -1,0 +1,33 @@
+.page-header {
+	position: absolute;
+	top: 0;
+	z-index: 10;
+	width: 100%;
+	text-align: center;
+	color: #ffffff;
+	background-color: #000000;
+	transition: background-color 0.3s;
+	&--fixed {
+		position: fixed;
+		background-color: rgba(0, 0, 0, 0.9);
+	}
+	&__left-col {
+		display: flex;
+		align-items: center;
+		padding-left: 10px;
+	}
+	@media (min-width: 562px) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		
+		&__logo-name { 
+			padding-left: 18px;
+		}
+		&__right-col {
+			display: flex;
+			align-items: center;
+		}
+
+	}
+}

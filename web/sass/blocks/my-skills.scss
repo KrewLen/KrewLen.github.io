@@ -1,0 +1,92 @@
+.my-skills {
+	margin: 0 auto;
+	margin-bottom: 80px;
+	padding: 0 15px;
+	max-width: 1024px;
+	text-align: center;
+	&__skillbar-title {
+		margin-bottom: 10px;
+		@include large-text;
+	}
+	&__skillbar {
+		width: 100%;
+		height: 16px;
+		background-color: #8e8dbc;  
+	}
+	&__skillbar-bar {
+		width: 0;
+		height: 16px;
+		background-color: #212121;
+	
+		@media (max-width: 619px) {
+			&[data-aos="skill-html"] {
+				width: 78%;
+			}
+			&[data-aos="skill-css"] {
+				width: 84%;
+			}
+			&[data-aos="skill-javascript"] {
+				width: 59%;
+			}
+			&[data-aos="skill-jquery"] {
+				width: 55%;
+			}
+			&[data-aos="skill-git"] {
+				width: 60%;
+			}
+		}
+	}
+	@media (min-width: 620px) {
+		&__wrap {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+		&__skill {
+			flex: 0 1 46%;
+		}
+	}
+	@media (min-width: 1024px) {
+		&__skill {
+			flex-basis: 28%;
+		}
+	}
+}
+
+@media (min-width: 620px) {
+	[data-aos="skill-html"] {
+	  width: 0;
+	  transition-property: all;
+	  &.aos-animate {
+	  	width: 78%;
+	  }
+	}
+	[data-aos="skill-css"] {
+	  width: 0;
+	  transition-property: all;
+	  &.aos-animate {
+	  	width: 84%;
+	  }
+	}
+	[data-aos="skill-javascript"] {
+	  width: 0;
+	  transition-property: all;
+	  &.aos-animate {
+	  	width: 59%;
+	  }
+	}
+	[data-aos="skill-jquery"] {
+	  width: 0;
+	  transition-property: all;
+	  &.aos-animate {
+	  	width: 55%;
+	  }
+	}
+	[data-aos="skill-git"] {
+	  width: 0;
+	  transition-property: all;
+	  &.aos-animate {
+	  	width: 60%;
+	  }
+	}
+}

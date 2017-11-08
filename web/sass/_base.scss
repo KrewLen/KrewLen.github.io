@@ -1,0 +1,40 @@
+html, body {
+	font: 16px/26px 'Roboto', serif;
+	overflow-x: hidden;
+}
+
+body.overlay::after {
+	content: "";
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 15;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a, :link {
+	color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+button {
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+}

@@ -1,0 +1,18 @@
+.about {
+	margin: 0 auto;
+	margin-bottom: 80px;
+	padding: 10px;
+	max-width: 1024px;
+	text-align: center;
+	&__resume {
+		margin-bottom: 30px;
+		padding: 10px 0;
+	}
+	@media (min-width: 562px) {
+		&__resume {
+			margin: 0 auto;
+			margin-bottom: 30px;
+			width: 66%;
+		}
+	}
+}

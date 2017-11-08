@@ -1,0 +1,74 @@
+.portfolio {
+	margin: 0 auto;
+	margin-bottom: 80px;
+	max-width: 1024px;
+	padding: 0 10px;
+	text-align: center;
+	&__example {
+		position: relative;
+		margin: 30px 0;
+		border-radius: 8px;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);		
+	}
+	&__visit {
+		display: block;
+		transition: all 0.3s;
+	}
+	&__example-title {
+		margin: 0;
+		padding: 10px 0;
+		border-bottom: none;
+		font: {
+			size: 24px;
+			weight: bold;
+		};
+	}
+	&__image-wrap {
+		margin: 0;
+		overflow: hidden;
+	}
+	&__image {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	&__description {
+		margin: 0 0 5px;
+		padding: 10px 10px;
+		border-top: none;
+	}
+	@media (min-width: 544px) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		&__example {
+			display: flex;
+			flex: 0 1 46%;
+		}
+	}
+	@media (min-width: 1024px) {
+		&__example {
+			flex-basis: 30%;
+		}
+		&__visit:hover {
+			opacity: 0.5;
+			&::after {
+				content: "Visit";
+				position: absolute;
+				top: calc(50% - 27px);
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				width: 66%;
+				height: 54px;
+				border-radius: 27px;
+				font-size: 24px;
+				line-height: 54px;
+				color: #727272;
+				background-color: #000000;
+				text-align: center;
+				box-shadow: 0 4px 6px rgba(152, 152, 152, 0.54);
+			}
+		}
+	}
+}

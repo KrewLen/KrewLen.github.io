@@ -1,0 +1,51 @@
+.author {
+	position: relative;
+	padding-left: 10px;
+	padding-top: 60px;
+	padding-bottom: 10px;
+	background-image: url(../images/author-bg-768.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+	overflow: hidden;
+	&__slogan-text {
+		padding: 12px 2px;
+		line-height: 54px;
+		background-color: rgba(255, 255, 255, 0.8);
+	}
+	&__note-wrap {
+		margin-bottom: 70px;
+		width: 50%;
+	}
+	&__note {
+		padding: 0 2px;
+		font-size: 18px;
+		line-height: 24px;
+		background-color: rgba(255, 255, 255, 0.8);
+	}
+	&__btn-wrap {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 55%;
+	}
+	@media (min-width: 562px) {
+		background-image: url(../images/author-bg-1024.jpg);
+		&__btn-wrap {
+			width: 42%;
+		}
+	}
+	@media (min-width: 1024px) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 80vh;
+		background: none;
+		text-align: center;
+		&__note-wrap {
+			margin: 0 auto 50px;
+		}
+		&__btn-wrap {
+			margin: 0 auto;
+		}
+	}
+}

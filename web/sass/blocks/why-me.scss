@@ -1,0 +1,97 @@
+.why-me {
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding: 0 10px;
+	max-width: 1024px;
+	&__feature {
+		padding: 20px 10px;
+		text-align: center;
+		box-shadow: 0 5px 8px rgba(0, 0, 0, 0.42);
+		cursor: pointer;
+	}
+	&__feature-front {
+		padding: 0 10px;
+	}
+	&__feature-back {
+		padding: 0 10px;		
+	}
+	&__icon {
+		margin-bottom: 10px;
+		display: block;
+		font-size: 64px;
+	}
+	&__feature-name {
+		display: block;
+		font: {
+			size: 22px;
+			weight: bold;
+		};
+	}
+	&__feature-explain {
+		margin: 5px 0;
+	}
+	@media (min-width: 620px) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		&__feature {
+			margin-bottom: 40px;
+			box-sizing: border-box;
+			flex: 0 1 50%;
+			padding: 0 10px;
+			box-shadow: none;
+		}
+	}
+	@media (min-width: 620px) and (max-width: 1023px) {
+		&__feature {
+			&:nth-child(odd) {
+				border-left: 1px solid #212121;
+			}
+		}
+	}
+	@media (min-width: 1024px) {
+		&__feature {
+			position: relative;
+			flex-basis: 25%;
+			margin-bottom: -1px;
+			padding: 0;
+			transform-style: preserve-3d;
+  			transition: all .5s ease-in-out;
+  			backface-visibility: hidden;
+			&:hover {
+				transform: rotateY(180deg);
+			}
+			&:nth-of-type(odd) .why-me__feature-front {
+				@include color-card-feature;
+			}
+			&:nth-of-type(even) .why-me__feature-back {
+				@include color-card-feature;
+			}
+		}
+		&__feature-front {
+			position: relative;
+			z-index: 10;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding-top: 20%;
+			padding-bottom: 20%;
+			background-color: #ffffff;
+			backface-visibility: hidden;
+		}
+		&__feature-back {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			z-index: 2;
+			transform: rotateY(180deg);
+		}
+	}
+}

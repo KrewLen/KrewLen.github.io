@@ -1,0 +1,19 @@
+.soc-panel {
+	padding: 5px 0;
+	&__link {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		width: 30px;
+		height: 30px;
+		border: 1px solid #ffffff;
+		border-radius: 50%;
+		color: #ffffff;
+		transition: all 0.4s;
+		&:hover {
+			transform: rotate(360deg);
+			color: #000000;
+			background-color: #ffffff;
+		}
+	}
+}

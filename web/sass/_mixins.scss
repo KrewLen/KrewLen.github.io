@@ -1,0 +1,27 @@
+@mixin large-text {
+	font-size: 24px;
+	line-height: 32px;
+}
+@mixin flex-feature {
+	box-sizing: border-box;
+	flex: 0 1 50%;
+}
+@mixin color-card-feature {
+	color: #ffffff;
+	background-color: #000000;
+}
+@mixin input-border {
+	border: {
+		width: 1px;
+		style: solid;
+		color: transparent transparent #000000 transparent;
+    };
+    outline: none;
+    transition: all 1s;
+    &:hover {
+			border-color: #000000;
+	}
+	&:focus {
+		border-color: #5479e6;
+	}
+}

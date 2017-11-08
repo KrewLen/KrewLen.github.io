@@ -1,0 +1,33 @@
+.parallax {
+	display: none;
+	@media (min-width: 1024px) {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -10;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		&--grey {
+			top: -65px;
+			height: 145%;
+			background-image: url(../images/parallax-1.png);
+			background-size: cover;
+		}
+		&--black {
+			top: 50px;
+			height: 100%;
+			background-image: url(../images/parallax-2.png);
+			background-size: contain;
+		}
+		&--darkgrey {
+			top: -35px;
+			left: -5%;
+			width: 110%;
+			height: 135%;
+			background-image: url(../images/parallax-3.png);
+			background-size: cover;
+		}
+	}
+}

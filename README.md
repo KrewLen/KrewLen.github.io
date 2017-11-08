@@ -38,3 +38,7 @@ Used _plugins_, _libraries_ and _frameworks_:
 * Bootstrap
 * Font Awesome
 * jQuery Scroll To
+***
+Personal Portfolio
+--------------------
+Personal Landing Page with simplic design and minimum plugins, only Jquery and AOS are fired up. Little php script working for feedback with clients. Responsive LP with links to all my previous projects.

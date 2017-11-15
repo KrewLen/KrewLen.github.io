@@ -368,6 +368,8 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-align: center;
             align-items: center;
     padding-left: 10px; }
+  .page-header__main-logo {
+    padding: 8px 0; }
 
 .main-nav {
   position: relative;

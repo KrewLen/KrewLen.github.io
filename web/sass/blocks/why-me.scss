@@ -56,17 +56,20 @@
 			margin-bottom: -1px;
 			padding: 0;
 			transform-style: preserve-3d;
-  			transition: all .5s ease-in-out;
-  			backface-visibility: hidden;
-			&:hover {
+			&:hover > &-wrap  {
 				transform: rotateY(180deg);
-			}
+			} 
 			&:nth-of-type(odd) .why-me__feature-front {
 				@include color-card-feature;
 			}
 			&:nth-of-type(even) .why-me__feature-back {
 				@include color-card-feature;
 			}
+		}
+		&__feature-wrap {
+			backface-visibility: hidden;
+			transform-style: preserve-3d;
+  			transition: all .5s ease-in-out;
 		}
 		&__feature-front {
 			position: relative;

@@ -355,6 +355,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   z-index: 10;
   width: 100%;
+  padding: 7px 0;
   text-align: center;
   color: #ffffff;
   background-color: #000000;
@@ -368,8 +369,6 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-align: center;
             align-items: center;
     padding-left: 10px; }
-  .page-header__main-logo {
-    padding: 8px 0; }
 
 .main-nav {
   position: relative;
@@ -670,7 +669,7 @@ h1, h2, h3, h4, h5, h6 {
   @media (min-width: 562px) and (max-width: 768px) {
     .main-nav__list {
       position: fixed;
-      top: 54px;
+      top: 56px;
       bottom: 0;
       right: 0;
       padding-top: 40px;
@@ -813,11 +812,8 @@ h1, h2, h3, h4, h5, h6 {
       margin-bottom: -1px;
       padding: 0;
       -webkit-transform-style: preserve-3d;
-              transform-style: preserve-3d;
-      transition: all .5s ease-in-out;
-      -webkit-backface-visibility: hidden;
-              backface-visibility: hidden; }
-      .why-me__feature:hover {
+              transform-style: preserve-3d; }
+      .why-me__feature:hover > .why-me__feature-wrap {
         -webkit-transform: rotateY(180deg);
                 transform: rotateY(180deg); }
       .why-me__feature:nth-of-type(odd) .why-me__feature-front {
@@ -826,6 +822,12 @@ h1, h2, h3, h4, h5, h6 {
       .why-me__feature:nth-of-type(even) .why-me__feature-back {
         color: #ffffff;
         background-color: #000000; }
+    .why-me__feature-wrap {
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+      transition: all .5s ease-in-out; }
     .why-me__feature-front {
       position: relative;
       z-index: 10;

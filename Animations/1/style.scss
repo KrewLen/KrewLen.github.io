@@ -1,0 +1,131 @@
+//////////////////////////// VARIABLES ///////////////////////////////////
+
+$line-h: 6px;
+$line-space: 12px;
+$anim-h: $line-h + $line-space + 2px;
+
+///////////////////////////////////////////////////////////////////////////
+
+html, body {
+	margin: 0;
+	padding: 1px;
+	background-color: #3FAF82;
+}
+button {
+	padding: 0px;
+	border: none;
+	background: none;
+	outline: none;
+}
+
+.wrapper {
+	display: flex;
+	margin: 100px 50px;
+	justify-content: center;
+	align-items: center;
+}
+.burger {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 46px;
+	cursor: pointer;
+
+	&__line {
+		min-width: 60px;
+		height: $line-h;
+		border-radius: 2px;
+		background-color: #fff;
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+	}
+
+	&__line--1 {
+		animation: menu-closed-line-1 0.5s ease-out forwards;
+	}
+
+	&__line--2 {
+		animation: menu-closed-line-2 0.5s ease-out forwards;
+	}
+
+	&__line--3 {
+		animation: menu-closed-line-3 0.5s ease-out forwards;
+	}
+
+	&.no-anim &__line {
+		animation: none;
+	}
+}
+.burger.active {
+	.burger__line--1 {
+		animation: menu-opened-line-1 0.5s ease-out forwards;
+	}
+
+	.burger__line--2 {
+		animation: menu-opened-line-2 0.5s ease-out forwards;
+	}
+
+	.burger__line--3 {
+		animation: menu-opened-line-3 0.5s ease-out forwards;
+	}
+}
+
+@keyframes menu-opened-line-1 {
+	0% {
+		transform: translate3d(0, 0, 0) rotate(0deg);
+	}
+	50% {
+		transform: translate3d(0, $anim-h, 0) rotate(0deg);
+	}
+	100% {
+		transform: translate3d(0, $anim-h, 0) rotate(-45deg);
+	}
+}
+@keyframes menu-opened-line-2 {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes menu-opened-line-3 {
+	0% {
+		transform: translate3d(0, 0, 0) rotate(0deg);
+	}
+	50% {
+		transform: translate3d(0, -$anim-h, 0) rotate(0deg);
+	}
+	100% {
+		transform: translate3d(0, -$anim-h, 0,) rotate(45deg);	
+	}
+}
+@keyframes menu-closed-line-1 {
+	0% {
+		transform: translate3d(0, $anim-h, 0) rotate(-45deg);
+	}
+	50% {
+		transform: translate3d(0, $anim-h, 0) rotate(0deg);
+	}
+	100% {
+		transform: translate3d(0, 0, 0) rotate(0deg);	
+	}
+}
+@keyframes menu-closed-line-2 {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes menu-closed-line-3 {
+	0% {
+		transform: translate3d(0, -$anim-h, 0,) rotate(45deg);
+	}
+	50% {
+		transform: translate3d(0, -$anim-h, 0) rotate(0deg);
+	}
+	100% {
+		transform: translate3d(0, 0, 0) rotate(0deg);
+	}
+}

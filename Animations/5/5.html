@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ch 5</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.min.css">
+</head>
+<body>
+	
+	<div class="wrapper">
+		<div class="profile">
+			<figure class="profile__photo">
+				<img src="1.jpg" class="profile__photo-1" alt="Photo of person">
+			</figure>
+			<div class="profile__overlay"></div>
+			<div class="profile__plus"></div>
+		</div>
+		<div class="profile">
+			<figure class="profile__photo">
+				<img src="2.jpg" class="profile__photo-2" alt="Photo of person">
+			</figure>
+			<div class="profile__overlay"></div>
+			<div class="profile__plus"></div>
+		</div>
+		<div class="profile">
+			<figure class="profile__photo">
+				<img src="3.jpg" class="profile__photo-3" alt="Photo of person">
+			</figure>
+			<div class="profile__overlay"></div>
+			<div class="profile__plus"></div>
+		</div>
+		<div class="profile">
+			<figure class="profile__photo">
+				<img src="4.jpg" class="profile__photo-4" alt="Photo of person">
+			</figure>
+			<div class="profile__overlay"></div>
+			<div class="profile__plus"></div>
+		</div>
+
+		<div class="user-info">
+			
+			<button class="close-btn" type="button"><span class="close-btn__cross"></span></button>
+
+			<figure class="user-info__cover-wrapper">
+				<img src="cover.jpg" alt="Cover image of user" class="user-info__cover-photo">
+			</figure>
+			
+			<div class="user-info__social-panel">
+				<figure class="user-info__avatar-wrapper">
+					<img src="4.jpg" class="user-info__avatar" alt="Avatar of user">
+				</figure>
+				<strong class="user-info__user-name">Kate Winston</strong>
+				<div class="user-info__social-links">
+					<a href="#" class="user-info__social"><span class="user-info__icon-wrap"><i class="fas fa-phone"></i></span></a>
+					<a href="#" class="user-info__social"><span class="user-info__icon-wrap"><i class="fas fa-comment"></i></span></a>
+					<a href="#" class="user-info__social"><span class="user-info__icon-wrap"><i class="fas fa-heart"></i></span></a>
+				</div>
+			</div>
+			
+
+		</div>
+	</div>
+	
+	<script
+		  src="https://code.jquery.com/jquery-3.3.1.min.js"
+		  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		  crossorigin="anonymous">
+  	</script>
+
+  	<script>
+	  	$('.profile').bind('click', function() {
+		
+			$('.user-info').addClass('active');
+		});
+
+		$('.close-btn').bind('click', function() {
+			$('.user-info').removeClass('active');
+		});
+	</script>
+</body>
+</html>

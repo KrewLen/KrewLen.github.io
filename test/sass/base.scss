@@ -1,0 +1,75 @@
+html, body {
+	font: {
+		family: Roboto, Arial, sans-serif;
+		weight: 400;
+		size: $main-font-size; 
+	};	
+	color: $main-text-color;
+	text-transform: uppercase;
+}
+
+button {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+	color: $main-text-color;
+}
+input {
+	outline: none;
+}
+ul {
+	list-style-type: none;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+.fas, .far {
+	color: $main-icon-color;
+	transition: color 0.2s ease-in; // unreliable 
+}
+.fa-question {
+	transition: all 0.3s ease-in-out;
+}
+.fa-check {
+	color: #fff;
+}
+.vertical-dash {
+	margin: 0 9px;
+	display: inline-block;
+	width: 2px;
+	height: 12px;
+	background-color: $typical-grey-bd;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

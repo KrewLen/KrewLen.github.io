@@ -1,0 +1,33 @@
+.typical-link {
+	color: $main-text-color;
+	transition: all 0.3s ease-out;
+	
+	&--sign {
+		padding: 9px;
+	}
+	&--footer {
+		padding: 7px 0;
+		font-size: $big-fsz;
+		color: $main-footer-text;
+		text-transform: capitalize;
+		&:active {
+			text-shadow: 3px 3px 1px rgba(9,91,123,0.4);
+		}
+	}
+	&--contact {
+		display: block;
+		padding: 7px 0;
+		font-size: $big-fsz;
+		color: #fff;
+		text-transform: lowercase;
+	}
+	&:hover {
+		color: $green-text;
+	}
+	&--categories:hover .fa-question {
+		transform: rotate(360deg);
+	}
+	&:active {
+		text-shadow: 4px 4px 1px rgba(0,0,0,0.1);
+	}
+}

@@ -1,0 +1,28 @@
+.typical-heading {
+	font-weight: 400;
+	&--small {
+		margin-bottom: 30px;
+		font-size: $main-font-size;
+	}
+	&--filters {
+		z-index: 20;
+		margin: 0;
+		padding: 40px 20px 30px;
+		font-size: $footer-head;
+		line-height: 21px;
+		text-transform: capitalize;
+		color: #000;
+		background-color: #fff;
+	}
+	&--course {
+		margin: 0;
+		margin-bottom: 10px;
+		font-size: $big-fsz;
+		line-height: 21px;
+	}
+	&--footer {
+		margin: 20px 0 20px 0;
+		font-size: $big-fsz;
+		color: #fff;
+	}
+}

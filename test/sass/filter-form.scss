@@ -1,0 +1,103 @@
+.filter-form {
+	margin-bottom: 40px;
+
+	&__inner-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&__select-wrapper {
+		position: relative;
+		margin-bottom: 20px;
+		&--empty {
+			width: 270px;
+		}
+	}
+	&__select-box {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border: 1px solid $main-header-bd;
+		box-sizing: border-box;
+		width: 270px;
+		padding: 13px 10px 13px 21px;
+		text-transform: capitalize;
+		cursor: pointer;
+		transition: all 0.3s ease-in;
+		
+		&:hover {
+			border-color: $filters-active-color;
+		}
+		&:hover .filter-form__arrow {
+			transform: translateY(4px);
+		}
+	}
+	&__arrow {
+		position: relative;
+		transition: all 0.3s ease-in;
+	}
+	&__drop-menu {
+		position: absolute;
+		top: 57px;
+		z-index: 10;
+		margin: 0;
+		padding: 0;
+		padding-bottom: 30px;
+		border-radius: 2px;
+		background-color: #fff;
+		box-shadow: 0 0 6px 1px rgba(0,0,0,0.3);
+	
+	}
+	&__select-item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		box-sizing: border-box;
+		min-width: 270px;
+		padding: 5px 20px;
+		cursor: pointer;
+		text-transform: capitalize;
+		&:hover .filter-form__checkbox {
+			border-color: $filters-active-color;
+		}
+		&.active .filter-form__checkbox {
+			border-color: $filters-active-color;
+			background-color: $filters-active-color;
+		}
+	}
+	&__chr-info {
+		display: flex;
+		justify-content: space-between;
+		flex-grow: 1;
+		margin-left: 10px;
+	}
+	&__checkbox {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-sizing: border-box;
+		width: 20px;
+		height: 20px;
+		border: 2px solid $filters-checkbox-bd;
+		border-radius: 2px;
+		transition: all 0.2s ease-in;
+	}
+	&__group-head {
+		position: relative;
+		z-index: 20;
+			&::before {
+			content: "";
+			position: absolute;
+			top: -9px;
+			right: 6px;
+			z-index: -10;
+			width: 18px;
+			height: 18px;
+			background-color: #fff;
+			transform: rotate(45deg);
+			box-shadow: 0 0 6px 1px rgba(0,0,0,0.3);  
+		}
+	}
+}

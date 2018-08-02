@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Educef</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>  
+
+	<header class="main-header">
+		
+		<div class="main-header__upper-fl container">
+  
+			<h1 class="main-header__logo-wrapper">
+				<figure class="main-header__logo-img">
+					<img src="img/logo.png" alt="Logo image of Educef">
+				</figure>
+				<span class="main-header__logo-text"> Edu<b class="main-header__green-logo">cef</b> </span>
+			</h1>
+			<div class="main-header__categories">
+				<a href="javascript:void(0)" class="typical-link typical-link--categories"><i class="fas fa-question"></i> <span class="typical-text--categories">categories</span></a>
+			</div> 
+			<div class="main-header__search-panel">
+				<form action="" method="GET" class="search-panel">
+					<fieldset class="search-panel__wrapper">
+						<input type="search" class="search-panel__input" placeholder="Search your course.."> <i class="fas fa-search"></i>
+					</fieldset>
+				</form>
+			</div>
+			<div class="main-header__action-panel">
+				<a href="javascript:void(0)" class="main-header__like-bar">
+					<i class="far fa-heart main-header__icon"></i>
+					<span class="main-header__icon-num" id="likeNumber">02</span>
+				</a>
+				<a href="javascript:void(0)" class="main-header__shop-cart">
+					<i class="fas fa-shopping-cart main-header__icon"></i>
+					<span class="main-header__icon-num" id="shopCartNumber">02</span>					
+				</a> 
+			</div>
+			<button type="button" class="main-header__instructor-btn">become an instructor</button>
+			<div class="main-header__sign-panel">
+				<a href="javascript:void(0)" class="typical-link typical-link--sign">sign in</a>
+				<span class="vertical-dash"></span>
+				<a href="javascript:void(0)" class="typical-link typical-link--sign">sign up</a>
+			</div>
+
+		</div> 
+
+		<hr class="main-header__hor-dash">
+
+		<nav class="main-nav container">
+			
+			<ul class="main-nav__bar">
+				<li class="main-nav__item"><a href="javascript:void(0)" class="main-nav__link">home</a></li>
+				<li class="main-nav__item"><a href="javascript:void(0)" class="main-nav__link">explore</a></li>
+				<li class="main-nav__item"><a href="course.html" class="main-nav__link">course</a></li>
+				<li class="main-nav__item"><a href="javascript:void(0)" class="main-nav__link">partner</a></li>
+				<li class="main-nav__item"><a href="javascript:void(0)" class="main-nav__link">event</a></li>
+				<li class="main-nav__item"><a href="javascript:void(0)" class="main-nav__link">membership</a></li>
+				<li class="main-nav__item"><a href="javascript:void(0)" class="main-nav__link">forum</a></li>
+				<li class="main-nav__item"><a href="javascript:void(0)" class="main-nav__link">elements</a></li>
+				<li class="main-nav__item"><a href="javascript:void(0)" class="main-nav__link">pages</a></li>
+			</ul>
+
+		</nav>
+
+	</header>
+ 
+	<main class="container">
+		
+		<div class="filters">
+			<div class="filters__active">
+				<div class="filters__active-head">
+					<h3 class="typical-heading typical-heading--small">active filters</h3>
+					<div class="filters__active-suitable">
+						<span class="filters__active-result">Result:</span>
+						<span class="filters__active-num"><span id="activeFiltersMatches">980</span> matches</span>
+					</div>
+				</div>
+
+				<ul class="filters__active-list">
+					<li class="filters__active-item"><a href="javascript:void(0)" class="filters__active-name active"><span class="round-cross"></span>default</li></a>
+					<li class="filters__active-item"><a href="javascript:void(0)" class="filters__active-name"><span class="round-cross"></span>default</li></a>
+					<li class="filters__active-item"><a href="javascript:void(0)" class="filters__active-name"><span class="round-cross"></span>default</li></a>
+					<li class="filters__active-item"><a href="javascript:void(0)" class="filters__active-name"><span class="round-cross"></span>default</li></a>
+				</ul>
+			</div>
+ 
+			<div class="filters__types">
+				<form action="" method="POST" class="filter-form">
+					<fieldset class="filter-form__wrapper">
+						<div class="filter-form__inner-wrapper">
+							<label class="filter-form__select-wrapper">
+								<select name="topics" id="" class="filter-form__select" multiple>
+									<option value="programming" class="filter-form__option" data-course-num="125">programming</option>
+									<option value="design" class="filter-form__option" data-course-num="246">design</option>
+									<option value="web development" class="filter-form__option" data-course-num="21">web development</option>
+									<option value="mobile app" class="filter-form__option" data-course-num="234">mobile app</option>
+									<option value="proccess" class="filter-form__option" data-course-num="48">proccess</option>
+								</select>
+							</label>
+							<label class="filter-form__select-wrapper">
+								<select name="skill level" id="" class="filter-form__select" multiple>
+									<option value="programming" class="filter-form__option" data-course-num="125">programming</option>
+									<option value="design" class="filter-form__option" data-course-num="246">design</option>
+									<option value="web development" class="filter-form__option" data-course-num="21">web development</option>
+									<option value="mobile app" class="filter-form__option" data-course-num="234">mobile app</option>
+									<option value="proccess" class="filter-form__option" data-course-num="48">proccess</option>
+								</select>
+							</label>
+							<label class="filter-form__select-wrapper">
+								<select name="course languages" id="" class="filter-form__select" multiple>
+									<option value="programming" class="filter-form__option" data-course-num="125">programming</option>
+									<option value="design" class="filter-form__option" data-course-num="246">design</option>
+									<option value="web development" class="filter-form__option" data-course-num="21">web development</option>
+									<option value="mobile app" class="filter-form__option" data-course-num="234">mobile app</option>
+									<option value="proccess" class="filter-form__option" data-course-num="48">proccess</option>
+								</select>
+							</label>
+							<label class="filter-form__select-wrapper">
+								<select name="duration" id="" class="filter-form__select" multiple>
+									<option value="programming" class="filter-form__option" data-course-num="125">programming</option>
+									<option value="design" class="filter-form__option" data-course-num="246">design</option>
+									<option value="web development" class="filter-form__option" data-course-num="21">web development</option>
+									<option value="mobile app" class="filter-form__option" data-course-num="234">mobile app</option>
+									<option value="proccess" class="filter-form__option" data-course-num="48">proccess</option>
+								</select>
+							</label>
+							<label class="filter-form__select-wrapper">
+								<select name="difficulty" id="" class="filter-form__select" multiple>
+									<option value="programming" class="filter-form__option" data-course-num="125">programming</option>
+									<option value="design" class="filter-form__option" data-course-num="246">design</option>
+									<option value="web development" class="filter-form__option" data-course-num="21">web development</option>
+									<option value="mobile app" class="filter-form__option" data-course-num="234">mobile app</option>
+									<option value="proccess" class="filter-form__option" data-course-num="48">proccess</option>
+								</select>
+							</label>
+							<label class="filter-form__select-wrapper">
+								<select name="feature" id="" class="filter-form__select" multiple>
+									<option value="programming" class="filter-form__option" data-course-num="125">programming</option>
+									<option value="design" class="filter-form__option" data-course-num="246">design</option>
+									<option value="web development" class="filter-form__option" data-course-num="21">web development</option>
+									<option value="mobile app" class="filter-form__option" data-course-num="234">mobile app</option>
+									<option value="proccess" class="filter-form__option" data-course-num="48">proccess</option>
+								</select>
+							</label>
+							<label class="filter-form__select-wrapper">
+								<select name="collaboration" id="" class="filter-form__select" multiple>
+									<option value="programming" class="filter-form__option" data-course-num="125">programming</option>
+									<option value="design" class="filter-form__option" data-course-num="246">design</option>
+									<option value="web development" class="filter-form__option" data-course-num="21">web development</option>
+									<option value="mobile app" class="filter-form__option" data-course-num="234">mobile app</option>
+									<option value="proccess" class="filter-form__option" data-course-num="48">proccess</option>
+								</select>
+							</label>
+							<label class="filter-form__select-wrapper filter-form__select-wrapper--empty"></label>
+						</div>
+						 
+					</fieldset>
+				</form>	
+			</div>
+ 
+		</div>
+
+		<div class="sort-tab">
+			 
+			<div class="sort-tab__breadcrumbs">
+				<ul class="sort-tab__breadcrumbs-list">
+					<li class="sort-tab__breadcrumbs-item"><a href="javascript:void(0)" class="sort-tab__breadcrumbs-link sort-tab__breadcrumbs-link--first">home</a></li>
+					<li class="sort-tab__breadcrumbs-item"><a class="sort-tab__breadcrumbs-link sort-tab__breadcrumbs-link--disabled" disabled>course</a></li>
+				</ul>
+			</div>
+			 
+			<div class="sort-tab__sort-col">
+				<span class="typical-text">Sort by:</span>
+				<div class="sort-tab__filter-tab">
+					<form action="" method="POST" class="sort-tab__form">
+						<fieldset class="sort-tab__select-wrapper">
+							<select name="sort filter" id="applySortFilter" class="sort-tab__select">
+								<option value="None">None</option>
+								<option value="Rating">Rating</option>
+								<option value="Popular">Popular</option>
+							</select>
+						</fieldset>
+					</form>
+				</div>
+				<button type="button" class="sort-tab__view-mode"><i class="fas fa-list-ul"></i></button>
+				<button type="button" class="sort-tab__view-mode sort-tab__view-mode--dots">
+					<i class="fas fa-ellipsis-h sort-tab__view-mode--dots1"></i>
+					<i class="fas fa-ellipsis-h"></i>
+					<i class="fas fa-ellipsis-h sort-tab__view-mode--dots3"></i>
+				</button>
+			</div>
+ 
+		</div>
+
+		<div class="courses">
+			<div class="courses__card">
+				<a href="javascript:void(0)" class="courses__wrap-link">
+					<figure class="courses__img-wrapper">
+						<img src="img/ph-1.jpg" alt="Paul & Joe Sister Jumper with Neon Trims" class="course main cover">
+						<span class="courses__best-sell">best seller</span>
+						<span class="courses__bundl">bundl</span>
+					</figure>
+					<div class="courses__info"> 
+						<h4 class="typical-heading typical-heading--course">Neutal networks and for deep learning</h4>
+						<div class="courses__tutor">
+							<figure class="courses__tutor-img-wrap">
+								<img src="img/tutor.jpg" class="courses__tutor-avatar" alt="Tutor's avatar">
+							</figure>
+							<span class="courses__tutor-name">Anthony <br> Leath</span>
+						</div>
+						<div class="courses__bottom-tab">
+							<div class="courses__like-quan">
+								<i class="far fa-heart"></i>
+								<span class="courses__like-num" id="coursesLikeNum">349</span>							
+							</div>
+							<div class="courses__ppl-quan">
+								<i class="fas fa-users"></i>
+								<span class="courses__ppl-num" id="coursesPplNum">2678</span>
+							</div>
+							<span class="courses__price">$100</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="courses__card">
+				<a href="javascript:void(0)" class="courses__wrap-link">
+					<figure class="courses__img-wrapper">
+						<img src="img/ph-2.jpg" alt="Paul & Joe Sister Jumper with Neon Trims" class="course main cover">
+						<span class="courses__best-sell">best seller</span>
+						<span class="courses__bundl">bundl</span>
+					</figure>
+					<div class="courses__info">
+						<h4 class="typical-heading typical-heading--course">Neutal networks and for deep learning</h4>
+						<div class="courses__tutor">
+							<figure class="courses__tutor-img-wrap">
+								<img src="img/tutor.jpg" class="courses__tutor-avatar" alt="Tutor's avatar">
+							</figure>
+							<span class="courses__tutor-name">Anthony <br> Leath</span>
+						</div>
+						<div class="courses__bottom-tab">
+							<div class="courses__like-quan">
+								<i class="far fa-heart"></i>
+								<span class="courses__like-num" id="coursesLikeNum">349</span>							
+							</div>
+							<div class="courses__ppl-quan">
+								<i class="fas fa-users"></i>
+								<span class="courses__ppl-num" id="coursesPplNum">2678</span>
+							</div>
+							<span class="courses__price">$100</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="courses__card">
+				<a href="javascript:void(0)" class="courses__wrap-link">
+					<figure class="courses__img-wrapper">
+						<img src="img/ph-3.jpg" alt="Paul & Joe Sister Jumper with Neon Trims" class="course main cover">
+						<span class="courses__best-sell">best seller</span>
+						<span class="courses__bundl">bundl</span>
+					</figure>
+					<div class="courses__info">
+						<h4 class="typical-heading typical-heading--course">Neutal networks and for deep learning</h4>
+						<div class="courses__tutor">
+							<figure class="courses__tutor-img-wrap">
+								<img src="img/tutor.jpg" class="courses__tutor-avatar" alt="Tutor's avatar">
+							</figure>
+							<span class="courses__tutor-name">Anthony <br> Leath</span>
+						</div>
+						<div class="courses__bottom-tab">
+							<div class="courses__like-quan">
+								<i class="far fa-heart"></i>
+								<span class="courses__like-num" id="coursesLikeNum">349</span>							
+							</div>
+							<div class="courses__ppl-quan">
+								<i class="fas fa-users"></i>
+								<span class="courses__ppl-num" id="coursesPplNum">2678</span>
+							</div>
+							<span class="courses__price">$100</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="courses__card">
+				<a href="javascript:void(0)" class="courses__wrap-link">
+					<figure class="courses__img-wrapper">
+						<img src="img/ph-4.jpg" alt="Paul & Joe Sister Jumper with Neon Trims" class="course main cover">
+						<span class="courses__best-sell">best seller</span>
+						<span class="courses__bundl">bundl</span>
+					</figure>
+					<div class="courses__info">
+						<h4 class="typical-heading typical-heading--course">Neutal networks and for deep learning</h4>
+						<div class="courses__tutor">
+							<figure class="courses__tutor-img-wrap">
+								<img src="img/tutor.jpg" class="courses__tutor-avatar" alt="Tutor's avatar">
+							</figure>
+							<span class="courses__tutor-name">Anthony <br> Leath</span>
+						</div>
+						<div class="courses__bottom-tab">
+							<div class="courses__like-quan">
+								<i class="far fa-heart"></i>
+								<span class="courses__like-num" id="coursesLikeNum">349</span>							
+							</div>
+							<div class="courses__ppl-quan">
+								<i class="fas fa-users"></i>
+								<span class="courses__ppl-num" id="coursesPplNum">2678</span>
+							</div>
+							<span class="courses__price">$100</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="courses__card">
+				<a href="javascript:void(0)" class="courses__wrap-link">
+					<figure class="courses__img-wrapper">
+						<img src="img/ph-5.jpg" alt="Paul & Joe Sister Jumper with Neon Trims" class="course main cover">
+						<span class="courses__best-sell">best seller</span>
+						<span class="courses__bundl">bundl</span>
+					</figure>
+					<div class="courses__info">
+						<h4 class="typical-heading typical-heading--course">Neutal networks and for deep learning</h4>
+						<div class="courses__tutor">
+							<figure class="courses__tutor-img-wrap">
+								<img src="img/tutor.jpg" class="courses__tutor-avatar" alt="Tutor's avatar">
+							</figure>
+							<span class="courses__tutor-name">Anthony <br> Leath</span>
+						</div>
+						<div class="courses__bottom-tab">
+							<div class="courses__like-quan">
+								<i class="far fa-heart"></i>
+								<span class="courses__like-num" id="coursesLikeNum">349</span>							
+							</div>
+							<div class="courses__ppl-quan">
+								<i class="fas fa-users"></i>
+								<span class="courses__ppl-num" id="coursesPplNum">2678</span>
+							</div>
+							<span class="courses__price">$100</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="courses__card">
+				<a href="javascript:void(0)" class="courses__wrap-link">
+					<figure class="courses__img-wrapper">
+						<img src="img/ph-6.jpg" alt="Paul & Joe Sister Jumper with Neon Trims" class="course main cover">
+						<span class="courses__best-sell">best seller</span>
+						<span class="courses__bundl">bundl</span>
+					</figure>
+					<div class="courses__info">
+						<h4 class="typical-heading typical-heading--course">Neutal networks and for deep learning</h4>
+						<div class="courses__tutor">
+							<figure class="courses__tutor-img-wrap">
+								<img src="img/tutor.jpg" class="courses__tutor-avatar" alt="Tutor's avatar">
+							</figure>
+							<span class="courses__tutor-name">Anthony <br> Leath</span>
+						</div>
+						<div class="courses__bottom-tab">
+							<div class="courses__like-quan">
+								<i class="far fa-heart"></i>
+								<span class="courses__like-num" id="coursesLikeNum">349</span>							
+							</div>
+							<div class="courses__ppl-quan">
+								<i class="fas fa-users"></i>
+								<span class="courses__ppl-num" id="coursesPplNum">2678</span>
+							</div>
+							<span class="courses__price">$100</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="courses__card">
+				<a href="javascript:void(0)" class="courses__wrap-link">
+					<figure class="courses__img-wrapper">
+						<img src="img/ph-7.jpg" alt="Paul & Joe Sister Jumper with Neon Trims" class="course main cover">
+						<span class="courses__best-sell">best seller</span>
+						<span class="courses__bundl">bundl</span>
+					</figure>
+					<div class="courses__info">
+						<h4 class="typical-heading typical-heading--course">Neutal networks and for deep learning</h4>
+						<div class="courses__tutor">
+							<figure class="courses__tutor-img-wrap">
+								<img src="img/tutor.jpg" class="courses__tutor-avatar" alt="Tutor's avatar">
+							</figure>
+							<span class="courses__tutor-name">Anthony <br> Leath</span>
+						</div>
+						<div class="courses__bottom-tab">
+							<div class="courses__like-quan">
+								<i class="far fa-heart"></i>
+								<span class="courses__like-num" id="coursesLikeNum">349</span>							
+							</div>
+							<div class="courses__ppl-quan">
+								<i class="fas fa-users"></i>
+								<span class="courses__ppl-num" id="coursesPplNum">2678</span>
+							</div>
+							<span class="courses__price">$100</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="courses__card">
+				<a href="javascript:void(0)" class="courses__wrap-link">
+					<figure class="courses__img-wrapper">
+						<img src="img/ph-8.jpg" alt="Paul & Joe Sister Jumper with Neon Trims" class="course main cover">
+						<span class="courses__best-sell">best seller</span>
+						<span class="courses__bundl">bundl</span>
+					</figure>
+					<div class="courses__info">
+						<h4 class="typical-heading typical-heading--course">Neutal networks and for deep learning</h4>
+						<div class="courses__tutor">
+							<figure class="courses__tutor-img-wrap">
+								<img src="img/tutor.jpg" class="courses__tutor-avatar" alt="Tutor's avatar">
+							</figure>
+							<span class="courses__tutor-name">Anthony <br> Leath</span>
+						</div>
+						<div class="courses__bottom-tab">
+							<div class="courses__like-quan">
+								<i class="far fa-heart"></i>
+								<span class="courses__like-num" id="coursesLikeNum">349</span>							
+							</div>
+							<div class="courses__ppl-quan">
+								<i class="fas fa-users"></i>
+								<span class="courses__ppl-num" id="coursesPplNum">2678</span>
+							</div>
+							<span class="courses__price">$100</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="courses__card">
+				<a href="javascript:void(0)" class="courses__wrap-link">
+					<figure class="courses__img-wrapper">
+						<img src="img/ph-9.jpg" alt="Paul & Joe Sister Jumper with Neon Trims" class="course main cover">
+						<span class="courses__best-sell">best seller</span>
+						<span class="courses__bundl">bundl</span>
+					</figure>
+					<div class="courses__info">
+						<h4 class="typical-heading typical-heading--course">Neutal networks and for deep learning</h4>
+						<div class="courses__tutor">
+							<figure class="courses__tutor-img-wrap">
+								<img src="img/tutor.jpg" class="courses__tutor-avatar" alt="Tutor's avatar">
+							</figure>
+							<span class="courses__tutor-name">Anthony <br> Leath</span>
+						</div>
+						<div class="courses__bottom-tab">
+							<div class="courses__like-quan">
+								<i class="far fa-heart"></i>
+								<span class="courses__like-num" id="coursesLikeNum">349</span>							
+							</div>
+							<div class="courses__ppl-quan">
+								<i class="fas fa-users"></i>
+								<span class="courses__ppl-num" id="coursesPplNum">2678</span>
+							</div>
+							<span class="courses__price">$100</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="courses__card">
+				<a href="javascript:void(0)" class="courses__wrap-link">
+					<figure class="courses__img-wrapper">
+						<img src="img/ph-10.jpg" alt="Paul & Joe Sister Jumper with Neon Trims" class="course main cover">
+						<span class="courses__best-sell">best seller</span>
+						<span class="courses__bundl">bundl</span>
+					</figure>
+					<div class="courses__info">
+						<h4 class="typical-heading typical-heading--course">Neutal networks and for deep learning</h4>
+						<div class="courses__tutor">
+							<figure class="courses__tutor-img-wrap">
+								<img src="img/tutor.jpg" class="courses__tutor-avatar" alt="Tutor's avatar">
+							</figure>
+							<span class="courses__tutor-name">Anthony <br> Leath</span>
+						</div>
+						<div class="courses__bottom-tab">
+							<div class="courses__like-quan">
+								<i class="far fa-heart"></i>
+								<span class="courses__like-num" id="coursesLikeNum">349</span>							
+							</div>
+							<div class="courses__ppl-quan">
+								<i class="fas fa-users"></i>
+								<span class="courses__ppl-num" id="coursesPplNum">2678</span>
+							</div>
+							<span class="courses__price">$100</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="courses__card">
+				<a href="javascript:void(0)" class="courses__wrap-link">
+					<figure class="courses__img-wrapper">
+						<img src="img/ph-11.jpg" alt="Paul & Joe Sister Jumper with Neon Trims" class="course main cover">
+						<span class="courses__best-sell">best seller</span>
+						<span class="courses__bundl">bundl</span>
+					</figure>
+					<div class="courses__info">
+						<h4 class="typical-heading typical-heading--course">Neutal networks and for deep learning</h4>
+						<div class="courses__tutor">
+							<figure class="courses__tutor-img-wrap">
+								<img src="img/tutor.jpg" class="courses__tutor-avatar" alt="Tutor's avatar">
+							</figure>
+							<span class="courses__tutor-name">Anthony <br> Leath</span>
+						</div>
+						<div class="courses__bottom-tab">
+							<div class="courses__like-quan">
+								<i class="far fa-heart"></i>
+								<span class="courses__like-num" id="coursesLikeNum">349</span>							
+							</div>
+							<div class="courses__ppl-quan">
+								<i class="fas fa-users"></i>
+								<span class="courses__ppl-num" id="coursesPplNum">2678</span>
+							</div>
+							<span class="courses__price">$100</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="courses__card">
+				<a href="javascript:void(0)" class="courses__wrap-link">
+					<figure class="courses__img-wrapper">
+						<img src="img/ph-12.jpg" alt="Paul & Joe Sister Jumper with Neon Trims" class="course main cover">
+						<span class="courses__best-sell">best seller</span>
+						<span class="courses__bundl">bundl</span>
+					</figure>
+					<div class="courses__info">
+						<h4 class="typical-heading typical-heading--course">Neutal networks and for deep learning</h4>
+						<div class="courses__tutor">
+							<figure class="courses__tutor-img-wrap">
+								<img src="img/tutor.jpg" class="courses__tutor-avatar" alt="Tutor's avatar">
+							</figure>
+							<span class="courses__tutor-name">Anthony <br> Leath</span>
+						</div>
+						<div class="courses__bottom-tab">
+							<div class="courses__like-quan">
+								<i class="far fa-heart"></i>
+								<span class="courses__like-num" id="coursesLikeNum">349</span>							
+							</div>
+							<div class="courses__ppl-quan">
+								<i class="fas fa-users"></i>
+								<span class="courses__ppl-num" id="coursesPplNum">2678</span>
+							</div>
+							<span class="courses__price">$100</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="courses__card">
+				<a href="javascript:void(0)" class="courses__wrap-link">
+					<figure class="courses__img-wrapper">
+						<img src="img/ph-13.jpg" alt="Paul & Joe Sister Jumper with Neon Trims" class="course main cover">
+						<span class="courses__best-sell">best seller</span>
+						<span class="courses__bundl">bundl</span>
+					</figure>
+					<div class="courses__info">
+						<h4 class="typical-heading typical-heading--course">Neutal networks and for deep learning</h4>
+						<div class="courses__tutor">
+							<figure class="courses__tutor-img-wrap">
+								<img src="img/tutor.jpg" class="courses__tutor-avatar" alt="Tutor's avatar">
+							</figure>
+							<span class="courses__tutor-name">Anthony <br> Leath</span>
+						</div>
+						<div class="courses__bottom-tab">
+							<div class="courses__like-quan">
+								<i class="far fa-heart"></i>
+								<span class="courses__like-num" id="coursesLikeNum">349</span>							
+							</div>
+							<div class="courses__ppl-quan">
+								<i class="fas fa-users"></i>
+								<span class="courses__ppl-num" id="coursesPplNum">2678</span>
+							</div>
+							<span class="courses__price">$100</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="courses__card">
+				<a href="javascript:void(0)" class="courses__wrap-link">
+					<figure class="courses__img-wrapper">
+						<img src="img/ph-1.jpg" alt="Paul & Joe Sister Jumper with Neon Trims" class="course main cover">
+						<span class="courses__best-sell">best seller</span>
+						<span class="courses__bundl">bundl</span>
+					</figure>
+					<div class="courses__info">
+						<h4 class="typical-heading typical-heading--course">Neutal networks and for deep learning</h4>
+						<div class="courses__tutor">
+							<figure class="courses__tutor-img-wrap">
+								<img src="img/tutor.jpg" class="courses__tutor-avatar" alt="Tutor's avatar">
+							</figure>
+							<span class="courses__tutor-name">Anthony <br> Leath</span>
+						</div>
+						<div class="courses__bottom-tab">
+							<div class="courses__like-quan">
+								<i class="far fa-heart"></i>
+								<span class="courses__like-num" id="coursesLikeNum">349</span>							
+							</div>
+							<div class="courses__ppl-quan">
+								<i class="fas fa-users"></i>
+								<span class="courses__ppl-num" id="coursesPplNum">2678</span>
+							</div>
+							<span class="courses__price">$100</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="courses__card">
+				<a href="javascript:void(0)" class="courses__wrap-link">
+					<figure class="courses__img-wrapper">
+						<img src="img/ph-2.jpg" alt="Paul & Joe Sister Jumper with Neon Trims" class="course main cover">
+						<span class="courses__best-sell">best seller</span>
+						<span class="courses__bundl">bundl</span>
+					</figure>
+					<div class="courses__info">
+						<h4 class="typical-heading typical-heading--course">Neutal networks and for deep learning</h4>
+						<div class="courses__tutor">
+							<figure class="courses__tutor-img-wrap">
+								<img src="img/tutor.jpg" class="courses__tutor-avatar" alt="Tutor's avatar">
+							</figure>
+							<span class="courses__tutor-name">Anthony <br> Leath</span>
+						</div>
+						<div class="courses__bottom-tab">
+							<div class="courses__like-quan">
+								<i class="far fa-heart"></i>
+								<span class="courses__like-num" id="coursesLikeNum">349</span>							
+							</div>
+							<div class="courses__ppl-quan">
+								<i class="fas fa-users"></i>
+								<span class="courses__ppl-num" id="coursesPplNum">2678</span>
+							</div>
+							<span class="courses__price">$100</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="courses__card">
+				<a href="javascript:void(0)" class="courses__wrap-link">
+					<figure class="courses__img-wrapper">
+						<img src="img/ph-3.jpg" alt="Paul & Joe Sister Jumper with Neon Trims" class="course main cover">
+						<span class="courses__best-sell">best seller</span>
+						<span class="courses__bundl">bundl</span>
+					</figure>
+					<div class="courses__info">
+						<h4 class="typical-heading typical-heading--course">Neutal networks and for deep learning</h4>
+						<div class="courses__tutor">
+							<figure class="courses__tutor-img-wrap">
+								<img src="img/tutor.jpg" class="courses__tutor-avatar" alt="Tutor's avatar">
+							</figure>
+							<span class="courses__tutor-name">Anthony <br> Leath</span>
+						</div>
+						<div class="courses__bottom-tab">
+							<div class="courses__like-quan">
+								<i class="far fa-heart"></i>
+								<span class="courses__like-num" id="coursesLikeNum">349</span>							
+							</div>
+							<div class="courses__ppl-quan">
+								<i class="fas fa-users"></i>
+								<span class="courses__ppl-num" id="coursesPplNum">2678</span>
+							</div>
+							<span class="courses__price">$100</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="courses__card">
+				<a href="javascript:void(0)" class="courses__wrap-link">
+					<figure class="courses__img-wrapper">
+						<img src="img/ph-4.jpg" alt="Paul & Joe Sister Jumper with Neon Trims" class="course main cover">
+						<span class="courses__best-sell">best seller</span>
+						<span class="courses__bundl">bundl</span>
+					</figure>
+					<div class="courses__info">
+						<h4 class="typical-heading typical-heading--course">Neutal networks and for deep learning</h4>
+						<div class="courses__tutor">
+							<figure class="courses__tutor-img-wrap">
+								<img src="img/tutor.jpg" class="courses__tutor-avatar" alt="Tutor's avatar">
+							</figure>
+							<span class="courses__tutor-name">Anthony <br> Leath</span>
+						</div>
+						<div class="courses__bottom-tab">
+							<div class="courses__like-quan">
+								<i class="far fa-heart"></i>
+								<span class="courses__like-num" id="coursesLikeNum">349</span>							
+							</div>
+							<div class="courses__ppl-quan">
+								<i class="fas fa-users"></i>
+								<span class="courses__ppl-num" id="coursesPplNum">2678</span>
+							</div>
+							<span class="courses__price">$100</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="courses__card">
+				<a href="javascript:void(0)" class="courses__wrap-link">
+					<figure class="courses__img-wrapper">
+						<img src="img/ph-5.jpg" alt="Paul & Joe Sister Jumper with Neon Trims" class="course main cover">
+						<span class="courses__best-sell">best seller</span>
+						<span class="courses__bundl">bundl</span>
+					</figure>
+					<div class="courses__info">
+						<h4 class="typical-heading typical-heading--course">Neutal networks and for deep learning</h4>
+						<div class="courses__tutor">
+							<figure class="courses__tutor-img-wrap">
+								<img src="img/tutor.jpg" class="courses__tutor-avatar" alt="Tutor's avatar">
+							</figure>
+							<span class="courses__tutor-name">Anthony <br> Leath</span>
+						</div>
+						<div class="courses__bottom-tab">
+							<div class="courses__like-quan">
+								<i class="far fa-heart"></i>
+								<span class="courses__like-num" id="coursesLikeNum">349</span>							
+							</div>
+							<div class="courses__ppl-quan">
+								<i class="fas fa-users"></i>
+								<span class="courses__ppl-num" id="coursesPplNum">2678</span>
+							</div>
+							<span class="courses__price">$100</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="courses__card">
+				<a href="javascript:void(0)" class="courses__wrap-link">
+					<figure class="courses__img-wrapper">
+						<img src="img/ph-6.jpg" alt="Paul & Joe Sister Jumper with Neon Trims" class="course main cover">
+						<span class="courses__best-sell">best seller</span>
+						<span class="courses__bundl">bundl</span>
+					</figure>
+					<div class="courses__info">
+						<h4 class="typical-heading typical-heading--course">Neutal networks and for deep learning</h4>
+						<div class="courses__tutor">
+							<figure class="courses__tutor-img-wrap">
+								<img src="img/tutor.jpg" class="courses__tutor-avatar" alt="Tutor's avatar">
+							</figure>
+							<span class="courses__tutor-name">Anthony <br> Leath</span>
+						</div>
+						<div class="courses__bottom-tab">
+							<div class="courses__like-quan">
+								<i class="far fa-heart"></i>
+								<span class="courses__like-num" id="coursesLikeNum">349</span>							
+							</div>
+							<div class="courses__ppl-quan">
+								<i class="fas fa-users"></i>
+								<span class="courses__ppl-num" id="coursesPplNum">2678</span>
+							</div>
+							<span class="courses__price">$100</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="courses__card">
+				<a href="javascript:void(0)" class="courses__wrap-link">
+					<figure class="courses__img-wrapper">
+						<img src="img/ph-7.jpg" alt="Paul & Joe Sister Jumper with Neon Trims" class="course main cover">
+						<span class="courses__best-sell">best seller</span>
+						<span class="courses__bundl">bundl</span>
+					</figure>
+					<div class="courses__info">
+						<h4 class="typical-heading typical-heading--course">Neutal networks and for deep learning</h4>
+						<div class="courses__tutor">
+							<figure class="courses__tutor-img-wrap">
+								<img src="img/tutor.jpg" class="courses__tutor-avatar" alt="Tutor's avatar">
+							</figure>
+							<span class="courses__tutor-name">Anthony <br> Leath</span>
+						</div>
+						<div class="courses__bottom-tab">
+							<div class="courses__like-quan">
+								<i class="far fa-heart"></i>
+								<span class="courses__like-num" id="coursesLikeNum">349</span>							
+							</div>
+							<div class="courses__ppl-quan">
+								<i class="fas fa-users"></i>
+								<span class="courses__ppl-num" id="coursesPplNum">2678</span>
+							</div>
+							<span class="courses__price">$100</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="courses__card">
+				<a href="javascript:void(0)" class="courses__wrap-link">
+					<figure class="courses__img-wrapper">
+						<img src="img/ph-8.jpg" alt="Paul & Joe Sister Jumper with Neon Trims" class="course main cover">
+						<span class="courses__best-sell">best seller</span>
+						<span class="courses__bundl">bundl</span>
+					</figure>
+					<div class="courses__info">
+						<h4 class="typical-heading typical-heading--course">Neutal networks and for deep learning</h4>
+						<div class="courses__tutor">
+							<figure class="courses__tutor-img-wrap">
+								<img src="img/tutor.jpg" class="courses__tutor-avatar" alt="Tutor's avatar">
+							</figure>
+							<span class="courses__tutor-name">Anthony <br> Leath</span>
+						</div>
+						<div class="courses__bottom-tab">
+							<div class="courses__like-quan">
+								<i class="far fa-heart"></i>
+								<span class="courses__like-num" id="coursesLikeNum">349</span>							
+							</div>
+							<div class="courses__ppl-quan">
+								<i class="fas fa-users"></i>
+								<span class="courses__ppl-num" id="coursesPplNum">2678</span>
+							</div>
+							<span class="courses__price">$100</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="courses__card">
+				<a href="javascript:void(0)" class="courses__wrap-link">
+					<figure class="courses__img-wrapper">
+						<img src="img/ph-9.jpg" alt="Paul & Joe Sister Jumper with Neon Trims" class="course main cover">
+						<span class="courses__best-sell">best seller</span>
+						<span class="courses__bundl">bundl</span>
+					</figure>
+					<div class="courses__info">
+						<h4 class="typical-heading typical-heading--course">Neutal networks and for deep learning</h4>
+						<div class="courses__tutor">
+							<figure class="courses__tutor-img-wrap">
+								<img src="img/tutor.jpg" class="courses__tutor-avatar" alt="Tutor's avatar">
+							</figure>
+							<span class="courses__tutor-name">Anthony <br> Leath</span>
+						</div>
+						<div class="courses__bottom-tab">
+							<div class="courses__like-quan">
+								<i class="far fa-heart"></i>
+								<span class="courses__like-num" id="coursesLikeNum">349</span>							
+							</div>
+							<div class="courses__ppl-quan">
+								<i class="fas fa-users"></i>
+								<span class="courses__ppl-num" id="coursesPplNum">2678</span>
+							</div>
+							<span class="courses__price">$100</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="courses__card">
+				<a href="javascript:void(0)" class="courses__wrap-link">
+					<figure class="courses__img-wrapper">
+						<img src="img/ph-10.jpg" alt="Paul & Joe Sister Jumper with Neon Trims" class="course main cover">
+						<span class="courses__best-sell">best seller</span>
+						<span class="courses__bundl">bundl</span>
+					</figure>
+					<div class="courses__info">
+						<h4 class="typical-heading typical-heading--course">Neutal networks and for deep learning</h4>
+						<div class="courses__tutor">
+							<figure class="courses__tutor-img-wrap">
+								<img src="img/tutor.jpg" class="courses__tutor-avatar" alt="Tutor's avatar">
+							</figure>
+							<span class="courses__tutor-name">Anthony <br> Leath</span>
+						</div>
+						<div class="courses__bottom-tab">
+							<div class="courses__like-quan">
+								<i class="far fa-heart"></i>
+								<span class="courses__like-num" id="coursesLikeNum">349</span>							
+							</div>
+							<div class="courses__ppl-quan">
+								<i class="fas fa-users"></i>
+								<span class="courses__ppl-num" id="coursesPplNum">2678</span>
+							</div>
+							<span class="courses__price">$100</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="courses__card">
+				<a href="javascript:void(0)" class="courses__wrap-link">
+					<figure class="courses__img-wrapper">
+						<img src="img/ph-11.jpg" alt="Paul & Joe Sister Jumper with Neon Trims" class="course main cover">
+						<span class="courses__best-sell">best seller</span>
+						<span class="courses__bundl">bundl</span>
+					</figure>
+					<div class="courses__info">
+						<h4 class="typical-heading typical-heading--course">Neutal networks and for deep learning</h4>
+						<div class="courses__tutor">
+							<figure class="courses__tutor-img-wrap">
+								<img src="img/tutor.jpg" class="courses__tutor-avatar" alt="Tutor's avatar">
+							</figure>
+							<span class="courses__tutor-name">Anthony <br> Leath</span>
+						</div>
+						<div class="courses__bottom-tab">
+							<div class="courses__like-quan">
+								<i class="far fa-heart"></i>
+								<span class="courses__like-num" id="coursesLikeNum">349</span>							
+							</div>
+							<div class="courses__ppl-quan">
+								<i class="fas fa-users"></i>
+								<span class="courses__ppl-num" id="coursesPplNum">2678</span>
+							</div>
+							<span class="courses__price">$100</span>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+
+	</main>
+
+	<footer class="main-footer">
+		 
+		<div class="main-footer__wrapper container">
+			<div class="main-footer__upper-fl">
+				<div class="main-footer__left-col">
+					<h2 class="main-header__logo-wrapper main-header__logo-wrapper--footer"> 
+						<figure class="main-header__logo-img">
+							<img src="img/logo.png" alt="Logo image of Educef">
+						</figure>
+						<span class="main-header__logo-text"> Edu<b class="main-header__green-logo">cef</b> </span>
+					</h2>
+					<span class="typical-text">education, inc.</span>
+					<address class="typical-text typical-text--address">
+						3601 seneca street. new york city <br> NY 10010, USA
+					</address>
+					<div class="social-bar">
+						<a href="javascript:void(0)" class="social-bar__link"><i class="fab fa-linkedin-in"></i></a>
+						<a href="javascript:void(0)" class="social-bar__link"><i class="fab fa-facebook-f"></i></a>
+						<a href="javascript:void(0)" class="social-bar__link"><i class="fab fa-twitter"></i></a>
+						<a href="javascript:void(0)" class="social-bar__link"><i class="fab fa-google-plus"></i></a>
+						<a href="javascript:void(0)" class="social-bar__link"><i class="fab fa-youtube"></i></a>
+						<a href="javascript:void(0)" class="social-bar__link"><i class="fab fa-pinterest"></i></a>
+					</div>
+				</div>
+				<div class="main-footer__link-map">
+					<div class="main-footer__links-col main-footer__links-col--left">
+						<h4 class="typical-heading typical-heading--footer">System</h4>
+						<a href="javascript:void(0)" class="typical-link typical-link--footer">Help center</a>
+						<a href="javascript:void(0)" class="typical-link typical-link--footer">Support forum</a>
+						<a href="javascript:void(0)" class="typical-link typical-link--footer">Affiliate</a>
+						<a href="javascript:void(0)" class="typical-link typical-link--footer">Explore</a>
+						<a href="javascript:void(0)" class="typical-link typical-link--footer">Pricing</a>
+					</div>
+					<div class="main-footer__links-col main-footer__links-col--right">
+						<h4 class="typical-heading typical-heading--footer">More</h4>
+						<a href="javascript:void(0)" class="typical-link typical-link--footer">About us</a>
+						<a href="javascript:void(0)" class="typical-link typical-link--footer">Blog</a>
+						<a href="javascript:void(0)" class="typical-link typical-link--footer">Service</a>
+						<a href="javascript:void(0)" class="typical-link typical-link--footer">Sign in</a>
+						<a href="javascript:void(0)" class="typical-link typical-link--footer">Sign up</a>
+					</div>
+				</div>
+				<div class="main-footer__contact-col">
+					<h4 class="typical-heading typical-heading--footer">Get in touch</h4>
+					<p class="typical-text">Contact us if you need <br> help with anything</p>
+					<a href="tel: +012675286897" class="typical-link typical-link--contact">(+01) 2675 286897</a>
+					<a href="tel: +012120286473" class="typical-link typical-link--contact">(+01) 2120 286473</a>
+					<a href="mailto: help@rubikthemes.com" class="typical-link typical-link--contact">help@rubikthemes.com</a>
+				</div>
+			</div>
+			
+			<hr class="main-footer__hor-dash">
+			
+			<p class="typical-text typical-text--copyright">
+				<i class="far fa-copyright"></i> <span class="typical-text--copy-centr">2018 rubikthemes, all right <br> reserved.</span>
+			</p>
+		</div>
+
+	</footer>
+	
+	<script
+		  src="https://code.jquery.com/jquery-3.3.1.min.js"
+		  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		  crossorigin="anonymous">
+  	</script>
+
+  	<script src="js/index.js" async>
+  		
+  	</script>
+  
+</body>
+</html>

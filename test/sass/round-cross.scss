@@ -1,0 +1,35 @@
+.round-cross {
+	position: absolute;
+	top: 9px;
+	left: 0;
+	margin-right: 9px;
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	border: 1px solid $filters-text-color;
+	border-radius: 50%;
+	transition: all 0.2s ease-in;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 8px;
+		left: 5px;
+		width: 7px;
+		height: 1px;
+		background-color: $filters-text-color;
+		transform: rotate(45deg);
+		transition: all 0.15s ease-in;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 8px;
+		left: 5px;
+		width: 7px;
+		height: 1px;
+		background-color: $filters-text-color;
+		transform: rotate(-45deg);
+		transition: all 0.15s ease-in;
+	}
+}

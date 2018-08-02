@@ -1,0 +1,27 @@
+.typical-text {
+	text-transform: capitalize;
+	font: {
+		style: normal;
+		size: $big-fsz;
+		}
+	line-height: 20px;
+	color: $main-footer-text;
+	&--categories {
+		padding-left: 15px;
+	}
+	&--address {
+		margin-bottom: 35px;
+	}
+	&--copyright {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0;
+		margin-top: 20px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+	&--copy-centr {
+		text-align: center;
+	}
+}

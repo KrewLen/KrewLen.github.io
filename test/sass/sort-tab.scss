@@ -1,0 +1,111 @@
+.sort-tab {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+	padding: 7px 15px;
+	background-color: $sort-tab-bgc;
+
+	&__breadcrumbs {
+
+	}
+	&__breadcrumbs-list {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	&__breadcrumbs-item {
+		display: inline-block;
+	}
+	&__breadcrumbs-link {
+		padding: 0 6px;
+		border-left: 1px solid $typical-grey-bd;
+		color: $sort-tab-fc;
+		cursor: pointer;
+		transition: all 0.2s ease-in;
+		&--first {
+			border: none;
+		}
+		&--disabled {
+			color: $typical-grey-bd;
+			cursor: default;
+		}
+		&:not(.sort-tab__breadcrumbs-link--disabled):hover {
+			color: $filters-active-color;
+		}
+	}
+	&__sort-col {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	&__filter-tab {
+		margin: 0 15px 0 10px;
+	}
+	&__selectbox-wrapper{
+		position: relative;
+	}
+	&__select-box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border: 1px solid $main-header-bd;
+		box-sizing: border-box;
+		width: 70px;
+		padding: 7px;
+		text-transform: capitalize;
+		background-color: #fff;
+		cursor: pointer;
+		transition: all 0.3s ease-in;
+		&:hover {
+			border-color: $filters-active-color;
+		}
+		&:hover .filter-form__arrow {
+			transform: translateY(4px);
+		}
+	}
+	&__drop-menu {
+		position: absolute;
+		top: 42px;
+		z-index: 10;
+		margin: 0;
+		padding: 0;
+		border-radius: 2px;
+		background-color: #fff;
+		box-shadow: 0 0 6px 1px rgba(0,0,0,0.3);
+	}
+	&__select-item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		box-sizing: border-box;
+		min-width: 78px;
+		padding: 5px 10px;
+		cursor: pointer;
+		text-transform: capitalize;
+		&:hover {
+			color: $filters-active-color;
+		}
+	}
+	&__view-mode {
+
+		&--dots {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			max-width: 30px;
+		}
+		&--dots1 {
+			position: relative;
+			top: 7px;
+		}
+		&--dots3 {
+			position: relative;
+			top: -7px;
+		}
+		&:hover .fas {
+			color: $filters-active-color;
+		}
+	}
+}

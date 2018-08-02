@@ -1,0 +1,21 @@
+.search-panel {
+
+	&__wrapper {
+		padding: 10px;
+		border: 1px solid $typical-grey-bd;
+		border-radius: 4px;
+		transition: all 0.2s ease-out;
+		&:hover {
+			border-color: $green-text;
+		}
+
+		& .search-panel__input:focus {
+			color: $green-text;
+		}
+	}
+	&__input {
+		padding: 0;
+		padding-right: 165px;
+		border: 0;
+	}
+}

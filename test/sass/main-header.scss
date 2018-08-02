@@ -1,0 +1,115 @@
+.main-header {
+	margin-bottom: 60px;
+
+	&__upper-fl {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 30px 0 15px;
+	}
+	&__logo-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		text-transform: capitalize;
+		cursor: default;
+		&--footer {
+			justify-content: flex-start;
+			margin-bottom: 15px;
+		}
+	}
+	&__logo-img {
+		margin-right: 11px;
+	}
+	&__logo-text {
+		font-size: $main-head-fsz;
+	}
+	&__green-logo {
+		color: $green-text;
+	}
+	&__categories {
+		display: flex;
+		align-items: center;
+	}
+	&__action-panel {
+		display: flex;
+		justify-content: space-between; 
+		align-self: stretch;
+	}
+	&__like-bar {
+		position: relative;
+		margin-right: 20px;
+		display: flex;
+		align-items: center;
+		&:hover .main-header__icon {
+			color: $icon-num-text-color;
+		}
+		&:active .main-header__icon-num {
+			animation: {
+						duration: 0.1s;
+						timing-function: $active-bar-cubic-fn;
+						direction: alternate;
+						fill-mode: both;
+						name: active-bar-zoom;
+					};
+		}
+	}
+	&__shop-cart {
+		@extend .main-header__like-bar;
+	}
+	&__icon {
+		position: relative;
+		top: 6px;
+		transition: all 0.3s ease-out;
+	}
+	&__icon-num {
+		position: relative;
+		bottom: 6px;
+		display: inline-block;
+		padding: 5px;
+		border-radius: 50%;
+		font-size: 7px;
+		color: $icon-num-text-color;
+		background-color: $icon-num-bgc;		
+	}
+	&__instructor-btn {
+		padding: 12px;
+		border-radius: 4px;
+		font-size: 7px;
+		text-transform: uppercase;
+		color: #fff;
+		background-color: $green-text;
+		transition: all 0.2s ease-out;
+		&:hover {
+			box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+		}
+		&:active {
+			color: $green-text;
+			background-color: #fff;
+		}
+	}
+	&__hor-dash {
+		margin: 0;
+		border: 0;
+		height: 2px;
+		background-color: $main-header-bd;
+	}
+	// &__search-panel:active .search-panel__wrapper {
+	// 	border-color: $green-text;
+	// }
+}
+@keyframes active-bar-zoom {
+	0% {
+		box-shadow: 0 0 0px 0px rgba(218,249,240,1);
+	}
+	70% {
+		box-shadow: 0 0 0px 6px rgba(218,249,240,0.9);
+	}
+	90% {
+		box-shadow: 0 0 0px 10px rgba(218,249,240,0.5);	
+	}
+	100% {
+		box-shadow: 0 0 0px 16px rgba(218,249,240,0.1);
+	}
+}

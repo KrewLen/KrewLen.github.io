@@ -1,0 +1,30 @@
+.main-footer {
+	color: #fff;
+	background-color: $main-footer-color;
+	&__wrapper {
+		padding: 0;
+		padding-top: 50px;
+	}
+	&__upper-fl {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__hor-dash {
+		margin: 0;
+		border: 0;
+		height: 1px;
+		background-color: $main-footer-icon;
+	}
+	&__link-map {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__links-col {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		&--left {
+			margin-right: 140px;
+		}
+	}
+}

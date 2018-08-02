@@ -1,0 +1,39 @@
+.social-bar {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 50px;
+
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 12px;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		color: $main-footer-icon;
+		background-color: $main-footer-icon-bg;
+		transition: all 0.3s ease-out;
+		&:hover {
+			animation: {
+						duration: 0.5s;
+						timing-function: $social-cubic-fn;
+						direction: alternate;
+						fill-mode: both;
+						name: social-link;
+					} ;
+			color: #fff;
+		}
+	}
+}
+@keyframes social-link {
+	0% {
+		font-size: 12px;
+	}
+	50% {
+		font-size: 20px;
+	}
+	100% {
+		font-size: 12px;
+	}
+}

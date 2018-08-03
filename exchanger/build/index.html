@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exchanger </title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	
+	<div class="exchanger">
+		 
+		<div class="exchanger__currency">
+			<h3 class="exchanger__select-head">
+				Select currency to exhange:
+			</h3> 
+			<div class="select-currency">
+				
+				<form action="" method="GET" class="select-currency__form">
+					<select name="currencySelect" id="currencySelect" class="select-currency__select">
+						  
+						<option value="USD" class="select-currency__select-option">USD</option>
+						<option value="RUB" class="select-currency__select-option">RUB</option>
+						<option value="GBP" class="select-currency__select-option">GBP</option>
+
+					</select>
+				</form>
+
+			</div>
+		</div>
+
+		<div class="exchanger__prices">
+			 
+			<div class="exchanger__prices-card exchanger__prices-card--eth">
+				<div class="exchanger__pad"></div>
+				<h4 class="exchanger__card-head">Ethereum</h4>
+				<div class="exchanger__card-img exchanger__card-img--eth">
+					<img src="img/eth.png" srcset="img/eth2x.png 2x, img/eth3x.png 3x" class="exchanger__coin-img" alt="Ethereum image of coin">
+				</div>
+				<div class="exchanger__price exchanger__price--eth">
+						<div class="exchanger__card-row">
+							<b class="exchanger__coin-price">Price:</b>
+							<b class="exchanger__coin-price exchanger__coin-price--num"></b>
+						</div>
+						<div class="exchanger__card-row">
+							<b class="exchanger__percent-ch">Percent change</b>
+							<div class="exchanger__percent-select">
+								<img src="img/radio.png" alt="Icon of selection changes between percents and numbers" class="exchanger__ch-select">
+								<div class="exchanger__select-bg"></div>
+							</div>
+						</div>
+						<div class="exchanger__card-row">
+							<span class="exchanger__time-ch">Hour change</span>
+							<span class="exchanger__time-ch-num exchanger__time-ch-num--hour"></span>
+						</div>
+						<div class="exchanger__card-row">
+							<span class="exchanger__time-ch">Day change</span>
+							<span class="exchanger__time-ch-num exchanger__time-ch-num--day"></span>
+						</div>
+						<div class="exchanger__card-row">
+							<span class="exchanger__time-ch">Week change</span>
+							<span class="exchanger__time-ch-num exchanger__time-ch-num--week"></span>
+						</div>
+						<div class="exchanger__card-row">
+							<span class="exchanger__time-ch">Month change</span>
+							<span class="exchanger__time-ch-num exchanger__time-ch-num--month"></span>
+						</div>
+				</div>
+			</div>
+			<div class="exchanger__prices-card exchanger__prices-card--lc">
+				<div class="exchanger__pad"></div>
+				<h4 class="exchanger__card-head">Litecoin</h4>
+				<div class="exchanger__card-img exchanger__card-img--lc">
+					<img src="img/lc.png" srcset="img/lc2x.png 2x, img/lc3x.png 3x" alt=" image of coin">
+				</div>   
+				<div class="exchanger__price">
+						<div class="exchanger__card-row">
+							<b class="exchanger__coin-price">Price:</b>
+							<b class="exchanger__coin-price exchanger__coin-price--num"></b>
+						</div>
+						<div class="exchanger__card-row">
+							<b class="exchanger__percent-ch">Percent change</b>
+							<div class="exchanger__percent-select">
+								<img src="img/radio.png" alt="Icon of selection changes between percents and numbers" class="exchanger__ch-select">
+								<div class="exchanger__select-bg"></div> 
+							</div>
+						</div>
+						<div class="exchanger__card-row">
+							<span class="exchanger__time-ch">Hour change</span>
+							<span class="exchanger__time-ch-num exchanger__time-ch-num--hour"></span>
+						</div>
+						<div class="exchanger__card-row">
+							<span class="exchanger__time-ch">Day change</span>
+							<span class="exchanger__time-ch-num exchanger__time-ch-num--day"></span>
+						</div>
+						<div class="exchanger__card-row">
+							<span class="exchanger__time-ch">Week change</span>
+							<span class="exchanger__time-ch-num exchanger__time-ch-num--week"></span>
+						</div>
+						<div class="exchanger__card-row">
+							<span class="exchanger__time-ch">Month change</span>
+							<span class="exchanger__time-ch-num exchanger__time-ch-num--month"></span>
+						</div>
+				</div>
+			</div>  
+			<div class="exchanger__prices-card exchanger__prices-card--bc">
+				<div class="exchanger__pad"></div>
+				<h4 class="exchanger__card-head">Bitcoin</h4>
+				<div class="exchanger__card-img exchanger__card-img--bc">  
+					<img src="img/bc.png" srcset="img/bc2x.png 2x, img/bc3x.png 3x" alt=" image of coin">
+				</div>
+				<div class="exchanger__price">
+						<div class="exchanger__card-row">
+							<b class="exchanger__coin-price">Price:</b>
+							<b class="exchanger__coin-price exchanger__coin-price--num"></b>
+						</div>
+						<div class="exchanger__card-row">
+							<b class="exchanger__percent-ch">Percent change</b>
+							<div class="exchanger__percent-select">
+								<img src="img/radio.png" alt="Icon of selection changes between percents and numbers" class="exchanger__ch-select">
+								<div class="exchanger__select-bg"></div>
+							</div>
+						</div>
+						<div class="exchanger__card-row">
+							<span class="exchanger__time-ch">Hour change</span>
+							<span class="exchanger__time-ch-num exchanger__time-ch-num--hour"></span>
+						</div>
+						<div class="exchanger__card-row">
+							<span class="exchanger__time-ch">Day change</span>
+							<span class="exchanger__time-ch-num exchanger__time-ch-num--day"></span>
+						</div>
+						<div class="exchanger__card-row">
+							<span class="exchanger__time-ch">Week change</span>
+							<span class="exchanger__time-ch-num exchanger__time-ch-num--week"></span>
+						</div>
+						<div class="exchanger__card-row">
+							<span class="exchanger__time-ch">Month change</span>
+							<span class="exchanger__time-ch-num exchanger__time-ch-num--month"></span>
+						</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<script
+		  src="https://code.jquery.com/jquery-3.3.1.min.js"
+		  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		  crossorigin="anonymous">
+  	</script>
+
+	<script src="js/index.js" async></script>
+</body>
+</html>

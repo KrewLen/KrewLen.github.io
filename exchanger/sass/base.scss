@@ -1,0 +1,83 @@
+html {
+	font: {
+		family: Roboto, Arial, sans-serif;
+		weight: 700;
+	};
+	color: #fff;
+	background-color: $main-bg;
+	background-image: url(/img/bg-m.png);	
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+button {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+	// color: $main-text-color;
+}
+input {
+	outline: none;
+}
+ul {
+	list-style-type: none;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+b {
+	display: inline-block;
+}
+.fas, .far {
+	transition: color 0.2s ease-in; // unreliable 
+}
+.fa-question {
+	transition: all 0.3s ease-in-out;
+}
+.fa-check {
+	color: #fff;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+@media (min-width: 1367px) {
+	html {
+		background-image: url(/img/bg.png);
+	}
+}
+@media (min-width: 769px) and (max-width: 1366px) {
+	html {
+		background-image: url(/img/bg-d.png);
+	}
+}
+@media (max-width: 768px) and (min-width: 321px) {
+	html {
+		background-image: url(/img/bg-t.png);
+	}
+}

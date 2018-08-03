@@ -1,0 +1,39 @@
+.select-currency {
+	&__selectbox-wrapper {
+		position: relative;
+		z-index: 20;
+		margin-right: 24px;
+	}
+	&__select-box { 
+		display: flex;
+		box-sizing: border-box;
+		padding: 16px;
+		border: 1px solid $form-select-bd;
+		border-radius: 4px;
+		font-size: $main-fsz;
+		cursor: pointer;
+	}
+	&__arrow {
+		display: inline-block;
+		margin-left: 12px;
+		@media (min-width: 768px) {
+			margin-left: 228px;
+		}
+	}
+	&__drop-menu {
+		position: absolute;
+		top: 60px;
+		margin: 0;
+		box-sizing: border-box;
+		width: 100%;
+		padding: 5px 0;
+		border: 1px solid $form-select-bd;
+		border-radius: 4px;
+		background-color: $form-select-bg;
+		list-style-type: none;
+	}
+	&__select-item {
+		padding: 5px 16px;
+		cursor: pointer;
+	}
+}

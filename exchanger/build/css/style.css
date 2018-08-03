@@ -433,7 +433,7 @@ b {
   padding: 5px 16px;
   cursor: pointer; }
 
-@media (max-width: 768px) and (min-width: 321px) {
+@media (min-width: 321px) and (max-width: 768px) {
   html {
     background-image: url(/img/bg-t.png); } }
 
@@ -452,6 +452,12 @@ b {
 @media (min-width: 1367px) {
   html {
     background-image: url(/img/bg.png); } }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  background-image: url(/img/bg.png); }
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  background-image: url(/img/bg-d.png); }
 
 @media (max-width: 767px) {
       .exchanger__prices {

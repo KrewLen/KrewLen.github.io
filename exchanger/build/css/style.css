@@ -230,7 +230,7 @@ html {
   font-weight: 700;
   color: #fff;
   background-color: #1b232b;
-  background-image: url(/img/bg-m.png);
+  background-image: url(../img/bg-m.png);
   background-repeat: no-repeat;
   background-size: contain; }
 
@@ -337,6 +337,7 @@ b {
     text-align: center;
     font-size: 22px; }
   .exchanger__card-img {
+    position: relative;
     min-height: 146px; }
     .exchanger__card-img--eth {
       position: relative;
@@ -346,8 +347,26 @@ b {
     .exchanger__card-img--lc {
       width: 109px;
       padding-top: 11px; }
+      .exchanger__card-img--lc::before {
+        content: "";
+        position: absolute;
+        bottom: 27px;
+        z-index: -10;
+        width: 110px;
+        height: 2px;
+        border-radius: 100%;
+        background-color: rgba(0, 0, 0, 0.3); }
     .exchanger__card-img--bc {
       width: 201px; }
+      .exchanger__card-img--bc::before {
+        content: "";
+        position: absolute;
+        bottom: 18px;
+        left: 47px;
+        width: 100px;
+        height: 2px;
+        border-radius: 70%;
+        background-color: rgba(0, 0, 0, 0.5); }
   .exchanger__coin-img {
     width: 123%; }
   .exchanger__price {
@@ -435,7 +454,7 @@ b {
 
 @media (min-width: 321px) and (max-width: 768px) {
   html {
-    background-image: url(/img/bg-t.png); } }
+    background-image: url(../img/bg-t.png); } }
 
 @media (min-width: 768px) {
     .select-currency__arrow {
@@ -443,7 +462,7 @@ b {
 
 @media (min-width: 769px) and (max-width: 1366px) {
   html {
-    background-image: url(/img/bg-d.png); } }
+    background-image: url(../img/bg-d.png); } }
 
 @media (min-width: 769px) and (max-width: 984px) {
       .exchanger__prices {
@@ -451,13 +470,13 @@ b {
 
 @media (min-width: 1367px) {
   html {
-    background-image: url(/img/bg.png); } }
+    background-image: url(../img/bg.png); } }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  background-image: url(/img/bg.png); }
+  background-image: url(../img/bg.png); }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  background-image: url(/img/bg-d.png); }
+  background-image: url(../img/bg-d.png); }
 
 @media (max-width: 767px) {
       .exchanger__prices {

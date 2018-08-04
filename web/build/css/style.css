@@ -648,29 +648,6 @@ h1, h2, h3, h4, h5, h6 {
         display: flex;
         -webkit-box-flex: 0;
                 flex: 0 1 46%; } }
-  @media (min-width: 562px) {
-    .author {
-      background-image: url(../images/author-bg-1024.jpg); }
-      .author__btn-wrap {
-        width: 42%; }
-    .page-header {
-      display: -webkit-box;
-      display: flex;
-      flex-wrap: wrap;
-      -webkit-box-pack: justify;
-              justify-content: space-between;
-      padding: 7px 0 7px; }
-      .page-header__logo-name {
-        padding-left: 18px; }
-      .page-header__right-col {
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-align: center;
-                align-items: center; }
-    .about__resume {
-      margin: 0 auto;
-      margin-bottom: 30px;
-      width: 66%; } }
   @media (min-width: 562px) and (max-width: 768px) {
     .main-nav__list {
       position: fixed;
@@ -700,6 +677,28 @@ h1, h2, h3, h4, h5, h6 {
         box-shadow: none; }
     .main-nav__link {
       padding: 12px 0; } }
+  @media (min-width: 562px) {
+    .author {
+      background-image: url(../images/author-bg-1024.jpg); }
+      .author__btn-wrap {
+        width: 42%; }
+    .page-header {
+      display: -webkit-box;
+      display: flex;
+      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+              justify-content: space-between; }
+      .page-header__logo-name {
+        padding-left: 18px; }
+      .page-header__right-col {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align: center;
+                align-items: center; }
+    .about__resume {
+      margin: 0 auto;
+      margin-bottom: 30px;
+      width: 66%; } }
   @media (min-width: 568px) {
   [data-aos="underline"] {
     left: -1000%;
@@ -912,6 +911,9 @@ h1, h2, h3, h4, h5, h6 {
         height: 135%;
         background-image: url(../images/parallax-3.png);
         background-size: cover; } }
+  @media (max-width: 768px) {
+    .page-header {
+      padding: 7px 0 7px; } }
   @media (max-width: 619px) {
       .my-skills__skillbar-bar[data-aos="skill-html"] {
         width: 78%; }

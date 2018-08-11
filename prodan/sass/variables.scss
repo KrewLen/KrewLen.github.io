@@ -1,0 +1,28 @@
+$container-width: 1780px;
+
+$burger-line-h: 3px;
+$burger-line-width: 47px;
+$burger-line-space: 10px;
+$burger-anim-h: $burger-line-h + $burger-line-space;
+
+$main-text-color: #202020; 
+$main-bgc: #f2f2f2;
+$dropdown-line-color: #cacaca;
+$nav-link-hover: rgba(32,32,32,.2);
+$nav-link-active: rgba(32,32,32,.6);
+$card-hover: rgba(33,33,33,.75);
+
+$main-font-size: 16px;
+$main-font-size-B: 18px;
+$big-font-size: 22px;
+$big-font-size-S: 20px;
+$small-font-size-B: 14px;
+$small-font-size: 12px;
+$main-head-fsz: 5vw;
+$main-head-fsz2: 74px;
+$main-head-sub-fsz: 1.1vw;
+$card-name-fsz: 3vw;
+
+
+$social-cubic-fn: cubic-bezier(.21,.98,.6,.99);
+$active-bar-cubic-fn: cubic-bezier(.21,.40,.78,.99);

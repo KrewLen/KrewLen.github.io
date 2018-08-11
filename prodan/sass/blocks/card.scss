@@ -1,0 +1,67 @@
+.card {
+	cursor: pointer;
+	font-size: 0;
+
+	position: relative;
+	
+	&:hover &__info {
+		opacity: 1;
+	}
+	&__info {
+		background-color: $card-hover;
+		opacity: 0;
+		transition: all 0.3s ease-out;
+
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 10;
+	}
+	&__category {
+		color: rgba(255,255,255,.6);
+		font-size: $main-font-size;
+		letter-spacing: 3px;
+
+		margin: 4% 0 15%;
+	}
+	&__name {
+		color: #fff;
+		font-size: $card-name-fsz;
+		line-height: 1.2;
+
+		padding: 0 25%;
+	}
+}
+@media (max-width: 768px) {
+	.card {
+		background-color: #fff;
+		font-size: $small-font-size-B;
+
+		&__info {
+			background-color: #fff;
+			opacity: 1;
+	
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+			padding: 30px;
+			position: static;
+		}
+		&__category {
+			color: #000;
+
+			margin: 0;
+			order: 20;
+		}
+		&__name {
+			color: #000;
+			font-size: $big-font-size-S;
+
+			margin: 0;
+			order: 10;
+			padding: 0;
+		}
+	}
+}

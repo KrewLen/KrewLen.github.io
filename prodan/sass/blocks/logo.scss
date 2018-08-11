@@ -1,0 +1,33 @@
+.logo {
+	display: flex;
+
+	&__icon-wrapper {
+		width: 37px;
+	}
+	&__logo-text {
+		display: none;
+	}
+	&__name {
+		font-size: $big-font-size;
+		line-height: 32px;
+	}
+
+}
+@media (max-width: 768px) {
+	.logo {
+		&__icon-wrapper {
+			width: 84px;
+		}
+		&__logo-text {
+			font-family: 'Gotham Pro';
+			font-weight: 500;
+			line-height: 20px;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			margin-left: 22px;
+			max-width: 120px;
+		}
+	}		
+}

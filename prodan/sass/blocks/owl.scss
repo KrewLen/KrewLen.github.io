@@ -1,0 +1,208 @@
+/*
+ *  Owl Carousel - Core
+ */
+.owl-carousel {
+	display: none;
+	width: 100%;
+	-webkit-tap-highlight-color: transparent;
+	/* position relative and z-index fix webkit rendering fonts issue */
+	position: relative;
+	z-index: 1;
+
+	.owl-stage {
+		position: relative;
+		-ms-touch-action: pan-Y;
+		touch-action: manipulation;
+		-moz-backface-visibility: hidden; /* fix firefox animation glitch */
+	}
+
+	.owl-stage:after {
+		content: ".";
+		display: block;
+		clear: both;
+		visibility: hidden;
+		line-height: 0;
+		height: 0;
+	}
+
+	.owl-stage-outer {
+		position: relative;
+		overflow: hidden;
+		/* fix for flashing background */
+		-webkit-transform: translate3d(0px, 0px, 0px);
+		&::after {
+			background-image: linear-gradient(to right, #f2f2f2 0%, transparent 62%);
+
+			content: '';
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 10;
+		}
+	}
+
+	.owl-wrapper,
+	.owl-item{
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		-webkit-transform: translate3d(0,0,0);
+		-moz-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+	}
+
+	.owl-item {
+		position: relative;
+		min-height: 1px;
+		float: left;
+		-webkit-backface-visibility: hidden;
+		-webkit-tap-highlight-color: transparent;
+		-webkit-touch-callout: none;
+	}
+	.owl-item img {
+		display: block;
+		width: 100%;
+	}
+
+	.owl-nav.disabled,
+	.owl-dots.disabled {
+		display: none;
+	}
+
+	.owl-nav .owl-prev,
+	.owl-nav .owl-next {
+		cursor: pointer;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	.owl-nav button.owl-prev,
+	.owl-nav button.owl-next {
+
+		background: #fff;
+		border: none;
+		color: #000;
+		font: inherit;
+		text-align: center;
+
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		height: 59px;
+		margin: 0;
+		padding:0!important;
+		width: 59px;
+
+		&:hover {
+			background: rgba(255,255,255,.5);
+		}
+	}
+
+	.owl-arrow {
+		width: 12px;
+	}
+
+	.owl-arrow-img {
+		&--prev {
+			transform: rotate(90deg);
+		}
+		&--next {
+			transform: rotate(-90deg);
+		}
+	}
+
+	&.owl-loaded {
+		display: block;
+	}
+
+	&.owl-loading {
+		opacity: 0;
+		display: block;
+	}
+
+	&.owl-hidden {
+		opacity: 0;
+	}
+
+	&.owl-refresh .owl-item {
+		visibility: hidden;
+	}
+
+	&.owl-drag .owl-item {
+		touch-action: pan-y;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	&.owl-grab {
+		cursor: move;
+		cursor: grab;
+	}
+
+	&.owl-rtl {
+		direction: rtl;
+	}
+
+	&.owl-rtl .owl-item {
+		float: right;
+	}
+}
+
+/* No Js */
+.no-js .owl-carousel {
+	display: block;
+}
+
+.owl-theme {
+	// Styling Next and Prev buttons
+	position: relative;
+	.owl-nav {
+		bottom: 0;
+		display: flex;
+		position: absolute;
+		right: 0;
+		-webkit-tap-highlight-color: transparent;
+
+		.disabled {
+			opacity: .5;
+			cursor: default;
+		}
+	}
+
+	.owl-dots {
+		display: none;
+	}
+}
+
+.owl-carousel{
+	.animated {
+		animation-duration: 1000ms;
+		animation-fill-mode: both;
+	}
+	.owl-animated-in {
+		z-index: 0;
+	}
+	.owl-animated-out {
+		z-index: 1;
+	}
+	.fadeOut {
+		animation-name: fadeOut;
+	}
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}

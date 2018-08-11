@@ -1,0 +1,28 @@
+.projects {
+	text-align: center;
+
+	&__select-category {
+		margin-bottom: 22px;
+	}
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&__example {
+		margin-bottom: 1%;
+		width: 49.3%;
+	}
+}
+@media (max-width: 768px) {
+	.projects {
+
+		&__example {
+			margin-bottom: 0;
+			width: 100%;
+		}
+		&__select-category {
+			margin-bottom: 0;
+		}
+	}
+}

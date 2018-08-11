@@ -1,0 +1,29 @@
+.soc-panel {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+
+	&__link {
+		opacity: 1;
+		transition: all 0.2s ease-in;
+
+		margin-right: 15px;
+		padding: 19px;
+		&:hover {
+			opacity: .4;
+		}
+	}
+	&__icon {
+		&--fb {
+			width: 7px;
+		}
+		&--inst {
+			width: 14px;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.soc-panel {
+		display: none;
+	}
+}

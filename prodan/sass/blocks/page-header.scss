@@ -1,0 +1,38 @@
+.page-header {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 38px;
+	
+	&--bottom-tab {
+		margin-bottom: 83px;
+	}
+	&__navigation {
+		display: flex;
+		justify-content: flex-end;
+	}
+}
+@media (max-width: 768px) {
+	.page-header {
+		justify-content: center;
+		margin: 0;
+		padding: 103px 0 0 0;
+		
+		&__logo-wrapper {
+			margin-bottom: 15px;
+		}
+		&__navigation {
+			background-color: #fff;
+
+			left: 0;
+			padding: 25px;
+			position: absolute;
+			right: 0;
+			top: 0;
+
+			&.expanded {
+				border-bottom: 1px solid $dropdown-line-color;
+			}
+		}
+	}
+}

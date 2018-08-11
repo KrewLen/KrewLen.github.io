@@ -1,0 +1,11 @@
+.container {
+	margin: 0 auto;
+	max-width: $container-width;
+	
+	&--size-l {
+		padding: 0 4%;
+	}
+	&--size-m {
+		padding: 0 11%;
+	}
+}

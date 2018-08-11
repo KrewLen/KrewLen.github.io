@@ -6,6 +6,8 @@
 	&__line {
 		background-color: #000;
 		border-radius: 2px;
+		
+		display: block;
 		height: $burger-line-h;
 		margin-bottom: $burger-line-space;
 		width: $burger-line-width;

@@ -63,6 +63,14 @@ $(document).ready(function(){
 			$('#pageLang').text($('html').attr('lang'));
 		};
 	}
+
+	function setActiveLangTabl () {
+		$langDropMenu.find('.dropdown__link--lang').each(function() {
+			if ( $(this).text() === $('html').attr('lang') ) {
+				$(this).addClass('active');
+			}
+		});
+	}
 ///
 ///
 ///	Event handlers for dropmenus
@@ -131,6 +139,7 @@ $(document).ready(function(){
 	setMainNavBeh();
 	setActiveLink();
 	setDropMenuBeh();
+	setActiveLangTabl();
 	setDropMenuEvents();
 	replaceSelectedEl();
 });

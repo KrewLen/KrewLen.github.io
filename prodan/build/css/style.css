@@ -285,6 +285,7 @@ img {
   font-style: normal; }
 
 .container {
+  box-sizing: border-box;
   margin: 0 auto;
   max-width: 1780px; }
   .container--size-l {

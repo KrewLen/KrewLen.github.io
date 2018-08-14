@@ -77,16 +77,18 @@ $(document).ready(function(){
 ///
 	function setDropMenuEvents() {
 		$dropMenu.each(function(){
-		var dropMenuLocal = $(this);
+			var dropMenuLocal = $(this);
 			var selectBoxLocal = dropMenuLocal.prev();
+			
 			dropMenuLocal.bind('show',function(){
 				
 				if(dropMenuLocal.is(':animated')){
 					return false;
 				}
 				
-				selectBoxLocal.addClass('expanded');
-				dropMenuLocal.slideDown('fast');
+				dropMenuLocal.slideDown('fast', function () {
+					selectBoxLocal.addClass('expanded');
+				});
 				
 			}).bind('hide',function(){
 				
@@ -94,8 +96,9 @@ $(document).ready(function(){
 					return false;
 				}
 				
-				selectBoxLocal.removeClass('expanded');
-				dropMenuLocal.slideUp('fast');
+				dropMenuLocal.slideUp('fast', function () {
+					selectBoxLocal.removeClass('expanded');
+				});
 				
 			}).bind('toggle',function(){
 				if(selectBoxLocal.hasClass('expanded')){

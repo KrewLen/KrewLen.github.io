@@ -1,11 +1,19 @@
 .page-header {
-	align-items: center;
-	display: flex;
-	justify-content: space-between;
-	padding-top: 38px;
 	
-	&--bottom-tab {
-		margin-bottom: 83px;
+	
+	&__wrapper {
+		align-items: center;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		max-width: $container-width;
+		padding: 0 4%;
+		padding-top: 38px;
+
+		&--bottom-tab {
+			margin-bottom: 83px;
+		}
 	}
 	&__navigation {
 		display: flex;
@@ -14,10 +22,11 @@
 }
 @media (max-width: 768px) {
 	.page-header {
-		justify-content: center;
-		margin: 0;
-		padding: 103px 0 0 0;
-		
+		&__wrapper {
+			justify-content: center;
+			margin: 0;
+			padding: 103px 0 0 0;
+		}
 		&__logo-wrapper {
 			margin-bottom: 15px;
 		}

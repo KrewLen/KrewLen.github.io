@@ -1,7 +1,12 @@
 .promo {
-	display: flex;
-	flex: 0 1 50%;
-
+	&__wrapper {
+		box-sizing: border-box;
+		display: flex;
+		flex: 0 1 50%;
+		margin: 0 auto;
+		max-width: $container-width;
+		padding: 0 11%;
+	}
 	&__head {
 		display: flex;
 		flex-direction: column;
@@ -16,9 +21,10 @@
 }
 @media (max-width: 1024px) {
 	.promo {
-		align-items: center;
-		flex-direction: column;
-
+		&__wrapper {
+			align-items: center;
+			flex-direction: column;
+		}
 		&__head {
 			width: 100%;
 		}
